@@ -30,7 +30,7 @@ module mm_ram
      input logic [31:0]                   dm_halt_addr_i,
 
      input logic                          instr_req_i,
-     input logic [31:0]                   instr_addr_i,
+     input logic [RAM_ADDR_WIDTH-1:0]     instr_addr_i,
      output logic [INSTR_RDATA_WIDTH-1:0] instr_rdata_o,
      output logic                         instr_rvalid_o,
      output logic                         instr_gnt_o,
